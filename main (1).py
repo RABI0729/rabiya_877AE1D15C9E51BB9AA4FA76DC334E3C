@@ -1,14 +1,22 @@
-# implement a recursion function using factorial
+class player:
+
+  def play(self):
+    print("the player is playing cricket.")
 
 
-def fact_rec(n):
-  if n == 0 or n == 1:
-    return 1
-  else:
-    return n * fact_rec(n - 1)
+class batsman(player):
+
+  def play(self):
+    print("thw batsman is batting.")
 
 
-number = 5
-res = fact_rec(number)
+class bowler(player):
 
-print("the Factorial of {} is {}.".format(number, res))
+  def play(self):
+    print("the bowler is bowling.")
+
+
+batsman = batsman()
+bowler = bowler()
+batsman.play()
+bowler.play()
